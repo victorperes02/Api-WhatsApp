@@ -1,0 +1,21 @@
+* O Bot vai procurar pessoa na lista de contatos e envia a mensagem.
+* O Bot irá realizar lembretes de pagamentos próximo das datas de vencimentos.
+
+*Criar tabela Clientes
+Colunas(numero, data, hora, status, nome)
+*Receber mensagem e consultar na base Clientes (numero)
+*Se não encontrar nada > Inserir novo registro
+*Se encontar > Consultar Where(numero) [data e hora]
+*Se Numero tiver contador maior que 1 em menos de 15 min [não enviar msg inicial de boas vindas]
+*Criar Tratativas para Timeout
+
+
+
+códigos anotados:
+/*connection.query("INSERT INTO users(nome, email) VALUES ('Jessica', 'jessica@celke.com.br')",function(err, result){
+    if(!err){
+        console.log('Usuario cadastrado com sucesso!');
+    }else{
+        console.log('Erro ao cadastra o usuario!');
+    }
+});*/
